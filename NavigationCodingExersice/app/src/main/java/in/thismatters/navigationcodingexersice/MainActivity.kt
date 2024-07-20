@@ -10,6 +10,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import `in`.thismatters.navigationcodingexersice.ui.theme.NavigationCodingExersiceTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MyApp()
                 }
             }
         }
@@ -30,17 +33,18 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    NavigationCodingExersiceTheme {
-        Greeting("Android")
+fun MyApp(){
+    val navController = rememberNavController()
+    NavHost(navController = navController   , startDestination = "firstscreen" ){
+        composable(route = "firstscreen"){
+            FirstScreen {name,age->
+                navController.navigate("secondscreen/$name/$age")
+            }
+        }
+        composable(route = "secondscreen/{name}/{age}"){
+            val name =it.arguments?.getString("name")?:"Krish"
+            val age = it.arguments?.getString("age")?:"11"
+            SecondScreen(name,age.toInt())
+        }
     }
 }
