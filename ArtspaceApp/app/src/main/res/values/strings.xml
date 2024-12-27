@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Artspace App</string>
+    <string name="image1">Batman</string>
+    <string name="image1d">He is not mutant who is bat, He is Richie Rich. </string>
+
+    <string name="image2">Adorable Luffy</string>
+    <string name="image2d">He is Anime(One Piece) Character,Wanna be Pirate King.</string>
+
+    <string name="image3">Iorn Man</string>
+    <string name="image3d">Genius, billionaire, playboy, philanthropist.</string>
+
+    <string name="image4">Godzilla</string>
+    <string name="image4d">A fictional monster, a colossal prehistoric reptilian creature awakened and empowered by nuclear radiation.</string>
+
+    <string name="image5">Itachi Uchiha</string>
+    <string name="image5d">Wipped out his owen clan for his village, skills:kill machine,one of best in uchiha clan.</string>
+
+    <string name="image6">Plant Earth</string>
+    <string name="image6d">Where Humans coexiest with other living organisms.</string>
+
+    <string name="image7">Owl</string>
+    <string name="image7d">Bird,Silet flight,Harry Potters Pet</string>
+
+    <string name="image8">Temple Gate</string>
+    <string name="image8d">Situated high in mountain ,Hard to climb</string>
+
+    <string name="image9">Expecto Patronum</string>
+    <string name="image9d">A defensive charm ,it was the primary protection against Dementors and Lethifolds, against which there were no other defences.</string>
+
+    <string name="image10">The Ghosts</string>
+    <string name="image10d"> the Ghosts are a special operations force, a mysterious group of elite soldiers</string>
+
+</resources>
